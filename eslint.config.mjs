@@ -1,6 +1,6 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+import { FlatCompat } from '@eslint/eslintrc';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -11,27 +11,19 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends(
-    "next/core-web-vitals",
-    "next/typescript",
-    "plugin:tailwindcss/recommended"
+    'next/core-web-vitals',
+    'next/typescript',
+    'plugin:tailwindcss/recommended'
   ),
   {
-    overrides: [
-      {
-        files: ["*.ts", "*.tsx", "*.js"],
-        parser: "@typescript-eslint/parser",
-      },
-    ],
-  },
-  {
     rules: {
-      "tailwindcss/classnames-order": "error",
-      "no-console": "warn", // Cảnh báo khi sử dụng console
-      semi: ["error", "always"], // Yêu cầu dấu chấm phẩy
-      quotes: ["error", "single"], // Yêu cầu sử dụng nháy đơn
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        { argsIgnorePattern: "^_" },
+      'tailwindcss/classnames-order': 'error',
+      'no-console': 'warn', // Cảnh báo khi sử dụng console
+      semi: ['error', 'always'], // Yêu cầu dấu chấm phẩy
+      quotes: ['error', 'single'], // Yêu cầu sử dụng nháy đơn
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_' },
       ], // Bỏ qua biến bắt đầu bằng "_"
     },
   },
