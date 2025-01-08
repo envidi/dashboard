@@ -10,7 +10,31 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...compat.extends(
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:tailwindcss/recommended"
+  ),
+  {
+    overrides: [
+      {
+        files: ["*.ts", "*.tsx", "*.js"],
+        parser: "@typescript-eslint/parser",
+      },
+    ],
+  },
+  {
+    rules: {
+      "tailwindcss/classnames-order": "error",
+      "no-console": "warn", // Cảnh báo khi sử dụng console
+      semi: ["error", "always"], // Yêu cầu dấu chấm phẩy
+      quotes: ["error", "single"], // Yêu cầu sử dụng nháy đơn
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_" },
+      ], // Bỏ qua biến bắt đầu bằng "_"
+    },
+  },
 ];
 
 export default eslintConfig;
