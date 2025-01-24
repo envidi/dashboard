@@ -15,5 +15,14 @@
     "table": "Bảng",
     "toDo": "Việc cần làm",
     "uiElements": "Thành phần"
+  },
+  "card": {
+    "upFromYesterday": "Up from yesterday",
+    "upFromPastWeek": "Up from past week",
+    "downFromYesterday": "Down from yesterday",
+    "totalUser": "Total User",
+    "totalOrder": "Total Order",
+    "totalSales": "Total Sales",
+    "totalPending": "Total Pending"
   }
 }
