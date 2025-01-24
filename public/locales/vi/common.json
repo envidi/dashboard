@@ -1,0 +1,19 @@
+{
+  "test": "kiểm tra 12",
+  "sidebar": {
+    "dashboard": "Bảng điều khiển",
+    "products": "Sản phẩm",
+    "favorites": "Yêu thích",
+    "inbox": "Hộp thư",
+    "orderLists": "Đơn hàng",
+    "productStock": "Kho sản phẩm",
+    "pricing": "Bảng giá",
+    "calender": "Lịch",
+    "contact": "Liên hệ",
+    "invoice": "Hóa đơn",
+    "team": "Nhóm",
+    "table": "Bảng",
+    "toDo": "Việc cần làm",
+    "uiElements": "Thành phần"
+  }
+}

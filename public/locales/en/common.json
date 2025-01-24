@@ -1,0 +1,28 @@
+{
+  "test": "test 12",
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "favorites": "Favorites",
+    "inbox": "Inbox",
+    "orderLists": "Order Lists",
+    "productStock": "Product Stock",
+    "pricing": "Pricing",
+    "calender": "Calender",
+    "contact": "Contact",
+    "invoice": "Invoice",
+    "team": "Team",
+    "table": "Table",
+    "toDo": "To-Do",
+    "uiElements": "UI Elements"
+  },
+  "card": {
+    "upFromYesterday": "Up from yesterday",
+    "upFromPastWeek": "Up from past week",
+    "downFromYesterday": "Down from yesterday",
+    "totalUser": "Total User",
+    "totalOrder": "Total Order",
+    "totalSales": "Total Sales",
+    "totalPending": "Total Pending"
+  }
+}
